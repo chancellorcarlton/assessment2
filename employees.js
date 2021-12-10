@@ -21,6 +21,17 @@
 
 //CODE HERE
 
+class Employee {
+    constructor(name, shifts){
+        this.name = name,
+        this.shifts = shifts
+    }
+
+    getSchedule(){
+        console.log
+    }
+}
+
 
 
 /*
@@ -35,6 +46,7 @@
 
 //CODE HERE
 
+const empOne = new Employee(`Jess`, `weekday mornings, weekday afternoons`)
 /*
     Call the `getSchedule` method on the
     `empOne` object.

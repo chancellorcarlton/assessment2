@@ -35,7 +35,8 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce((acc, cv) => acc + cv.price, 0)
+console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -54,6 +55,15 @@ const cart = [
 */
 
 //CODE HERE
+
+
+const calcFinalPrice = (cartTotal, couponValue, tax) => {
+    let taxedTotal = cartTotal + calcedTax
+    let finalTotal = taxedTotal + couponValue
+    return finalTotal
+}
+
+// console.log(calcFinalPrice(summedPrice, 5, .0925))
 
 
 
@@ -79,7 +89,14 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
-
+Customer object should have the following properties
+    firstName: string
+    lastName: string
+    email: string
+    favorite food: string
+    zipCode: number
+    phoneNumber: number
+    address: string
 */
 
 /*
@@ -88,3 +105,12 @@ const cart = [
 */
 
 //CODE HERE
+
+const chance = {
+    firstName: `chance`,
+    lastName: `carlton`,
+    email: `chance@gmail.com`,
+    favoriteFood: `pizza`,
+    phoneNumber: 3928409234,
+    address: `123 n`
+}

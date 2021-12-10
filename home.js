@@ -24,9 +24,9 @@
 //CODE HERE
 
 
-// const greetUser = (username) => {return `Welcome back, ${username}`}
+const greetUser = (username) => {return `Welcome back, ${username}`}
 
-// greetUser(`Tony`)
+// console.log(greetUser(`jim`))
 
 
 //////////////////PROBLEM 2////////////////////
@@ -54,18 +54,18 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 //CODE HERE
 
 
-// const canWeDeliver = (zipCode) => {
-//   for (let i = 0; i < deliveryAreaZipCodes.length; i++) {
-//     if (;alksdjf;lkaj) {
-//       return `You're in our delivery zone!`
-//     } else {
-//       return `Sorry, we can't deliver to that address`
-//     }
-//   }
-// }
+const canWeDeliver = (zipCode) => {
+  for (let i = 0; i < deliveryAreaZipCodes.length; i++) {
+    if (deliveryAreaZipCodes[i] === zipCode) {
+      return `You're in our delivery zone!`
+    } else {
+      return `Sorry, we can't deliver to that address`
+    }
+  }
+}
 
   
-// canWeDeliver(85203)
+// console.log(canWeDeliver(85295))
 
 
 /* 
@@ -88,17 +88,16 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 // CODE HERE
 
 
-// const canWeDeliver = (zipCode) => {
-//   if (deliveryAreaZipCodes.includes(zipCode)) {
-//     return `You're in our delivery zone!`
-//   } else {
-//     return `Sorry, we can't deliver to that address`
-//   }
-// }
+const canWeDeliverTwo = (zipCode) => {
+  if (deliveryAreaZipCodes.includes(zipCode)) {
+    return `You're in our delivery zone!`
+  } else {
+    return `Sorry, we can't deliver to that address`
+  }
+}
 
   
-// canWeDeliver(82205)
-
+console.log(canWeDeliverTwo(85295))
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -135,9 +134,11 @@ const deals = [
 
 //CODE HERE
 
-deals[0].title.replace(`15% Off!`, `10% Off!`)
 
-// console.log(newDeal)
+deals[0].title = deals[0].title.replace(`15%`, `10%`)
+
+
+// console.log(deals[0].title)
 
 /*
     The restaurant is going to continue its
@@ -154,4 +155,7 @@ deals[0].title.replace(`15% Off!`, `10% Off!`)
 
 //CODE HERE
 
-deals[1].desc.replace(`March`, `April`)
+deals[1].desc = deals[1].desc.replace(`March`, `April`).trim()
+
+console.log(deals)
+
