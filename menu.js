@@ -106,9 +106,56 @@ console.log(category)
 //CODE HERE
 
 
-let foodArr {
-    
-}
+let foodArr = [
+    {
+      name: `Pepperoni`,
+      price: 5,
+      category: `entree`,
+      popularity: 5,
+      rating: 5,
+      tags: [`adult`, `senior-citizen`]
+    },
+    {
+      name: `Cheese`,
+      price: 6,
+      category: `entree`,
+      popularity: 6,
+      rating: 6,
+      tags: [`gluten-free`, `kids`]
+    },
+    {
+      name: `Meat Lover`,
+      price: 7,
+      category: `entree`,
+      popularity: 7,
+      rating: 7,
+      tags: [`senior-citizen`]
+    },
+    {
+      name: `Four Cheese`,
+      price: 8,
+      category: `entree`,
+      popularity: 8,
+      rating: 8,
+      tags: [`gluten-free`]
+    },
+    {
+      name: `Pineapple`,
+      price: 9,
+      category: `entree`,
+      popularity: 9,
+      rating: 9,
+      tags: [`adult`, `senior-citizen`]
+    },
+    {
+      name: `Veggie`,
+      price: 10,
+      category: `entree`,
+      popularity: 10,
+      rating: 10,
+      tags: [`gluten-free`, `kids`, `adult`, `senior-citizen`]
+    }
+  ]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -125,7 +172,9 @@ let foodArr {
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(tags => tags === foodArr.length)
+
+filteredFood(foodArr(`gluten-free`))
 
 
 
